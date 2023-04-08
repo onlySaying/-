@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title> 커뮤니티 기본 틀 | HOME </title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/post.css">
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/design.js"></script>
+
+</head>
+
+<body>
+    <!--헤더 영역-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="#">Login</a>
+        <a href="#">뉴스</a>
+        <a href="#">이벤트</a>
+        <a href="#">자유게시판</a>
+    </div>
+    <span class="mySidenavBtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="header-wrap">
+        <header class="header-inner">
+            <h1>
+                금오공과대학교 커뮤니티
+            </h1>
+
+            <div class="mobile-menu-wrap">
+                <div class="mobile-menu-scroll">
+                    <ul class="site-choice">
+                    </ul>
+                    <ul class="util-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                    <nav id="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">게시판</a>
+                                <ul>
+                                    <li><a href="#">뉴스</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">자유게시판</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--//헤더 영역-->
+    <!--콘테이너 영역-->
+    <div id="registercontainer">
+        <table id ="table_signUp">
+            <form name="reg" action="regresult.jsp" method="get">
+                <tr>
+                    <th colspan="2"><h1><b>회원가입</b></h1></th>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <th>나이</th>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td><input type="text" name="gender"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><input type="submit" value="가입하기">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="취소하기"></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+    <!--//콘테이너 영역-->
+
+</body>
+
+</html>

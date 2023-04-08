@@ -1,0 +1,51 @@
+#postcontainer
+{
+    margin-left: 10%;
+    width: 60%;
+    height : 40%;
+    background-color:  white;
+    color : black;
+    background-clip: content-box;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+#logincontainer
+{
+    margin-left: 30%;
+    width: 40%;
+    height : 40%;
+    background-color:  white;
+    color : black;
+    background-clip: content-box;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+#registercontainer
+{
+    margin-left: 20%;
+    width: 55%;
+    height : 45%;
+    background-color:  white;
+    color : black;
+    background-clip: content-box;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    margin-top:150px;
+}
+
+#table_signUp
+{
+    border-spacing: 20px;
+}
+
+
+#table_signUp h1
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}

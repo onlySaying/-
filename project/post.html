@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title> 글작성 </title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/post.css">
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/design.js"></script>
+
+</head>
+
+<body>
+    <!--헤더 영역-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="#">Login</a>
+        <a href="#">뉴스</a>
+        <a href="#">이벤트</a>
+        <a href="#">자유게시판</a>
+    </div>
+    <span class="mySidenavBtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="header-wrap">
+        <header class="header-inner">
+            <h1>
+                금오공과대학교 커뮤니티
+            </h1>
+
+            <div class="mobile-menu-wrap">
+                <div class="mobile-menu-scroll">
+                    <ul class="site-choice">
+                    </ul>
+                    <ul class="util-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                    <nav id="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">게시판</a>
+                                <ul>
+                                    <li><a href="#">뉴스</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">자유게시판</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--//헤더 영역-->
+    <!--콘테이너 영역-->
+    <div id="postcontainer">
+        <section id="board" class="rounded" >
+            <div id="wrap">
+                <h2>게시글 작성</h2>
+                <input type="hidden" value="board_write" name="command">
+                <table>
+                    <tr>
+                        <th>제목 *</th>
+                        <td><input type="text" name="title"></td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td><textarea cols="100" rows="30" name="content"></textarea></td>
+                    </tr>
+                </table>
+                <input class="btn" type="submit" value="등록">
+                <input class="btn" type="reset" value="다시작성하기">
+                <input class="btn" type="button" value="취소" onclick="javascript:history.back()">
+            </div>
+    </div>
+    <!--//콘테이너 영역-->
+
+</body>
+
+</html>
